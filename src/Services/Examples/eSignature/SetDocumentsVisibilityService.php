@@ -97,6 +97,7 @@ class SetDocumentsVisibilityService
         $envelope_definition = new EnvelopeDefinition(
             [
                 'email_subject' => "Please sign this document set",
+                'enforce_signer_visibility' => "true",
                 'documents' => SetDocumentsVisibilityService::_prepareDocuments(
                     $docPdf,
                     $docDocx,
